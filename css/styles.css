@@ -287,10 +287,15 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .close {
+  position: absolute;
   width: 30px;
   height: 30px;
-  text-align: right;
+  top: 0;
+  right: 0;
+  padding-top: 8px;
+  padding-right: 8px;
 }
 /*преимущества*/
 
@@ -363,8 +368,7 @@ body {
   text-transform: uppercase;
   color: var(--primery-white-color);
 }
-.picture {
-}
+
 .app {
   position: absolute;
   bottom: 0;
