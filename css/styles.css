@@ -9,6 +9,7 @@
   --button-hero-text-color: #ffffff;
   --bg-hero-color: #2f303a;
   --client-color-icon: #afb1b8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
@@ -78,7 +79,7 @@ body {
   text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 .link:hover,
 .link:focus {
@@ -109,14 +110,6 @@ body {
   text-decoration: none;
 }
 
-/*.site-nav .link-curr::after {
-  content: '';
-  display: block;
-  width: 48px;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-}*/
 .site-nav .link-studio {
   position: relative;
   display: block;
@@ -134,7 +127,7 @@ body {
   border-radius: 2px;
   transition-property: opasity;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
   opacity: 0;
 }
 .site-nav .link-studio:hover:after {
@@ -157,7 +150,7 @@ body {
   border-radius: 2px;
   transition-property: opasity;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
   opacity: 0;
 }
 .site-nav .portfolio:hover:after {
@@ -221,7 +214,7 @@ body {
   fill: currentColor;
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .icon-email:hover,
@@ -282,7 +275,7 @@ body {
   letter-spacing: 0.06em;
   transition-property: color, background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -322,6 +315,7 @@ body {
   right: 0;
   padding-top: 8px;
   padding-right: 8px;
+  background: var(--primery-white-color);
 }
 /*преимущества*/
 
@@ -475,7 +469,7 @@ body {
   background-color: var(--primery-white-color);
   transition-property: fill, background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 .social-link:hover,
 .social-link:focus {
@@ -510,7 +504,7 @@ body {
   fill: var(--client-color-icon);
   transition-property: border, fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 .link-client:hover,
 .link-client:focus {
@@ -527,7 +521,7 @@ body {
   border: 1px solid transparent;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -601,7 +595,7 @@ body {
   flex-basis: calc((100% - 3 * 30px) / 3);
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 .card-item:hover,
 .card-item:focus {
@@ -630,7 +624,7 @@ body {
   transform: translatey(100%);
   transition-property: opasity, transform;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
   opacity: 0;
 }
 .card-item:hover .card-overlay,
@@ -727,6 +721,9 @@ body {
   border-radius: 50%;
   color: var(--primery-white-color);
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: beckground-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 .link-footer:hover,
 .link-footer:focus {
