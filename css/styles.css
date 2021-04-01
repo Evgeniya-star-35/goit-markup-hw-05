@@ -120,7 +120,7 @@ body {
   padding-bottom: 0;
   padding-top: 16px;
 }
-.site-nav .link-studio:hover::after {
+.site-nav .link-studio::after {
   content: '';
   display: block;
   margin-top: 28px;
@@ -128,13 +128,17 @@ body {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
+  opacity: 0;
+}
+.site-nav .link-studio:hover::after {
+  opacity: 1;
 }
 .site-nav .portfolio {
   display: block;
   padding-bottom: 0;
   padding-top: 16px;
 }
-.site-nav .portfolio:hover::after {
+.site-nav .portfolio::after {
   content: '';
   display: block;
   margin-top: 28px;
@@ -142,6 +146,10 @@ body {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
+  opacity: 0;
+}
+.site-nav .portfolio:hover::after {
+  opacity: 1;
 }
 
 .logo {
