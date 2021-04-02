@@ -113,7 +113,7 @@ body {
 .site-nav .link-studio {
   position: relative;
   display: block;
-  padding-bottom: 0;
+  padding-bottom: 32px;
   padding-top: 32px;
 }
 .site-nav .link-studio::after {
@@ -125,18 +125,12 @@ body {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
-  transition-property: opasity;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  opacity: 0;
 }
-.site-nav .link-studio:hover:after {
-  opacity: 1;
-}
+
 .site-nav .portfolio {
   position: relative;
   display: block;
-  padding-bottom: 0;
+  padding-bottom: 32px;
   padding-top: 32px;
 }
 .site-nav .portfolio::after {
@@ -148,20 +142,13 @@ body {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
-  transition-property: opasity;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  opacity: 0;
-}
-.site-nav .portfolio:hover:after {
-  opacity: 1;
 }
 
 .logo {
   display: block;
   margin-right: 94px;
   padding-top: 24px;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
 }
 
 .span-web,
